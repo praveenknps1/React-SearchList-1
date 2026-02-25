@@ -1,0 +1,26 @@
+.container {
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial;
+}
+
+input, select {
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.card {
+  background: burlywood;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.no {
+  color: red;
+  margin-top: 20px;
+}
