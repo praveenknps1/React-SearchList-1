@@ -1,18 +1,17 @@
-import React, { useState } from "react"; 
-import products from "./Product";  
-import "./Style.css"
+import React, { useState } from "react";
+import products from "./Product";
+import "./Style.css";
 function SearchFilter() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
 
   const filteredProducts = products.filter((item) => {
-
     const matchName = item.name
       .toLowerCase()
       .includes(search.toLocaleLowerCase());
 
     const matchCategory = category === "" || item.category === category;
-    debugger
+    debugger;
     return matchName && matchCategory;
   });
 
